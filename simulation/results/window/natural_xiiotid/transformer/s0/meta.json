@@ -1,0 +1,72 @@
+{
+  "phase_start": [
+    0,
+    120,
+    240,
+    360
+  ],
+  "phase_names": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "drift_points": [
+    22,
+    201,
+    283,
+    331,
+    409
+  ],
+  "classes": [
+    "Normal",
+    "Exploitation",
+    "Reconnaissance",
+    "Tampering",
+    "Weaponization",
+    "Lateral _movement",
+    "C&C",
+    "RDOS",
+    "Exfiltration"
+  ],
+  "n_features": 64,
+  "dataset_info": {
+    "source": "../X-IIoTID/X-IIoTID dataset.csv",
+    "rows_raw": 204977,
+    "rows_used": 182673,
+    "n_features": 64,
+    "dropped_high_cardinality": [
+      "Scr_bytes",
+      "Des_bytes",
+      "Scr_pkts",
+      "Scr_ip_bytes",
+      "Des_pkts",
+      "Des_ip_bytes",
+      "total_bytes",
+      "total_packet",
+      "paket_rate",
+      "byte_rate",
+      "Scr_packts_ratio",
+      "Des_pkts_ratio",
+      "Scr_bytes_ratio",
+      "Des_bytes_ratio"
+    ],
+    "dropped_constant": [
+      "Bad_checksum",
+      "is_SYN_with_RST"
+    ],
+    "class_counts": {
+      "Normal": 101428,
+      "Reconnaissance": 25233,
+      "RDOS": 19342,
+      "Weaponization": 16292,
+      "Lateral _movement": 7507,
+      "Exfiltration": 5477,
+      "Tampering": 2942,
+      "C&C": 2863,
+      "Exploitation": 1131,
+      "crypto-ransomware": 458
+    },
+    "times": "[1.57852249e+09 1.58275764e+09 1.57854227e+09 ... 1.57854286e+09\n 1.58207400e+09 1.57837401e+09]"
+  }
+}

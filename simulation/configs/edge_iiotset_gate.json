@@ -1,0 +1,10 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "edge_iiotset_gate",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  }
+}

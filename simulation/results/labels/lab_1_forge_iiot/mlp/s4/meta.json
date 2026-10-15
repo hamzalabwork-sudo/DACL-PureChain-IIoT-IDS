@@ -1,0 +1,53 @@
+{
+  "phase_start": [
+    0,
+    60,
+    120,
+    200
+  ],
+  "phase_names": [
+    "P1 Initial",
+    "P2 Drift",
+    "P3 New-attack",
+    "P4 A-returns"
+  ],
+  "drift_points": [
+    60,
+    120,
+    200
+  ],
+  "classes": [
+    "normal",
+    "ddos_tcp",
+    "dos_icmp",
+    "dos_udp",
+    "port_scan",
+    "vuln_scan",
+    "os_finger"
+  ],
+  "n_features": 79,
+  "dataset_info": {
+    "source": "../Forge_IIOT_Pro.csv",
+    "rows_raw": 654510,
+    "rows_used": 292763,
+    "n_features": 79,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [
+      "arp.duplicate-address-detected",
+      "arp.seconds-since-duplicate-address-frame",
+      "eth.padding_bad",
+      "eth:ethertype:ip",
+      "mqtt.conack.val",
+      "mqtt.retain"
+    ],
+    "class_counts": {
+      "normal": 90000,
+      "port_scan": 61448,
+      "vuln_scan": 57163,
+      "dos_icmp": 41856,
+      "ddos_tcp": 23304,
+      "os_finger": 15465,
+      "dos_udp": 3527
+    }
+  }
+}

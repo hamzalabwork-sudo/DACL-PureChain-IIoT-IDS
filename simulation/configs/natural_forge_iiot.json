@@ -1,0 +1,44 @@
+{
+  "extends": "base.json",
+  "name": "natural_forge_iiot",
+  "dataset": {
+    "type": "csv",
+    "path": "../Forge_IIOT_Pro.csv",
+    "label_col": "attack_type",
+    "other_label_cols": [
+      "attack_label"
+    ],
+    "drop_cols": [
+      "frame.number",
+      "frame.time_epoch",
+      "tcp.stream",
+      "udp.stream",
+      "ip.checksum",
+      "tcp.checksum",
+      "udp.checksum",
+      "icmp.checksum",
+      "icmpv6.checksum"
+    ],
+    "drop_duplicates": true,
+    "time_col": "frame.time_epoch",
+    "target_rows": 200000,
+    "min_per_class": 3000
+  },
+  "scenario": {
+    "type": "natural",
+    "batch_size": 256,
+    "pretrain_frac": 0.3,
+    "n_segments": 4,
+    "test_per_class": 1000,
+    "test_frac": 0.15,
+    "min_class_rows": 200,
+    "normal": "normal"
+  },
+  "metrics": {
+    "forgetting": {
+      "group": "A",
+      "after_phase": 3
+    },
+    "return_phase": 3
+  }
+}

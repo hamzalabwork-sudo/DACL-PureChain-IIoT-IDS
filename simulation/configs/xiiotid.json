@@ -1,0 +1,35 @@
+{
+  "extends": "base.json",
+  "name": "xiiotid",
+  "dataset": {
+    "type": "csv",
+    "path": "../X-IIoTID/X-IIoTID dataset.csv",
+    "label_col": "class2",
+    "other_label_cols": [
+      "class1",
+      "class3"
+    ],
+    "drop_cols": [
+      "Date",
+      "Timestamp",
+      "Scr_IP",
+      "Des_IP",
+      "Scr_port",
+      "Des_port"
+    ],
+    "max_per_class": 90000,
+    "drop_duplicates": true
+  },
+  "scenario": {
+    "normal": "Normal",
+    "groups": {
+      "A": [
+        "RDOS"
+      ],
+      "B": [
+        "Reconnaissance",
+        "Weaponization"
+      ]
+    }
+  }
+}

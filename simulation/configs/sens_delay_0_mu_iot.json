@@ -1,0 +1,5 @@
+{
+  "extends": "mu_iot.json",
+  "name": "sens_delay_0_mu_iot",
+  "label_delay": 0
+}

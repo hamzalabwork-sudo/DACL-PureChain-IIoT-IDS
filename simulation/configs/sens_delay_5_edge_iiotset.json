@@ -1,0 +1,5 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "sens_delay_5_edge_iiotset",
+  "label_delay": 5
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "gate2_xiiotid_gate_h30.json",
+  "name": "gate3_xiiotid_gate",
+  "learners": {
+    "gate": {
+      "policy": "net_bal"
+    }
+  }
+}

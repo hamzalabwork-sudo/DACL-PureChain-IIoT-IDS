@@ -1,0 +1,10 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "forge_iiot_gate",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  }
+}

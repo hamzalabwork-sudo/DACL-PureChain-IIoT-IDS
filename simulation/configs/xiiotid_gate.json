@@ -1,0 +1,10 @@
+{
+  "extends": "xiiotid.json",
+  "name": "xiiotid_gate",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  }
+}

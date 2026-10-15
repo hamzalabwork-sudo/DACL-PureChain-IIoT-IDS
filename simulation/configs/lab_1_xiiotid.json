@@ -1,0 +1,5 @@
+{
+  "extends": "xiiotid.json",
+  "name": "lab_1_xiiotid",
+  "label_budget": 0.01
+}

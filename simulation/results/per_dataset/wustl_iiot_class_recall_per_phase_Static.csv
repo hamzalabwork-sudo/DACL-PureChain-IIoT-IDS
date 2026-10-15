@@ -1,0 +1,6 @@
+,normal,DoS,Reconn
+P0 Deployment,99.98,99.7,0.0
+P1 Initial,99.98,99.7,0.0
+P2 Drift,99.84,91.04,0.0
+P3 New-attack,99.84,91.04,0.0
+P4 A-returns,99.84,91.04,0.0

@@ -1,0 +1,5 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "lab_1_edge_iiotset",
+  "label_budget": 0.01
+}

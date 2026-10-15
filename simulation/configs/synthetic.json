@@ -1,0 +1,23 @@
+{
+  "extends": "base.json",
+  "name": "synthetic",
+  "dataset": {
+    "type": "synthetic",
+    "n_features": 40,
+    "n_normal": 80000,
+    "n_attack": 15000
+  },
+  "scenario": {
+    "normal": "Normal",
+    "groups": {
+      "A": [
+        "DDoS_UDP",
+        "DDoS_TCP"
+      ],
+      "B": [
+        "SQL_injection",
+        "XSS"
+      ]
+    }
+  }
+}

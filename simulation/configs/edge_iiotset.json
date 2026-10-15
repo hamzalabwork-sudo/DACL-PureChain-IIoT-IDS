@@ -1,0 +1,48 @@
+{
+  "extends": "base.json",
+  "name": "edge_iiotset",
+  "dataset": {
+    "type": "csv",
+    "path": "../Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv",
+    "label_col": "Attack_type",
+    "other_label_cols": [
+      "Attack_label"
+    ],
+    "drop_cols": [
+      "frame.time",
+      "ip.src_host",
+      "ip.dst_host",
+      "arp.src.proto_ipv4",
+      "arp.dst.proto_ipv4",
+      "http.file_data",
+      "http.request.full_uri",
+      "icmp.transmit_timestamp",
+      "http.request.uri.query",
+      "tcp.options",
+      "tcp.payload",
+      "tcp.srcport",
+      "tcp.dstport",
+      "udp.port",
+      "mqtt.msg"
+    ],
+    "max_per_class": 90000,
+    "drop_duplicates": true
+  },
+  "scenario": {
+    "normal": "Normal",
+    "groups": {
+      "A": [
+        "DDoS_UDP",
+        "DDoS_ICMP",
+        "DDoS_TCP",
+        "DDoS_HTTP"
+      ],
+      "B": [
+        "Password",
+        "SQL_injection",
+        "XSS",
+        "Vulnerability_scanner"
+      ]
+    }
+  }
+}

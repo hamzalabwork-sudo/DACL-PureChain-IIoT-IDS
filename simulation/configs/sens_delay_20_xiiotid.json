@@ -1,0 +1,5 @@
+{
+  "extends": "xiiotid.json",
+  "name": "sens_delay_20_xiiotid",
+  "label_delay": 20
+}

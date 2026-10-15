@@ -1,0 +1,38 @@
+{
+  "phase_start": [
+    0,
+    60,
+    120,
+    200
+  ],
+  "phase_names": [
+    "P1 Initial",
+    "P2 Drift",
+    "P3 New-attack",
+    "P4 A-returns"
+  ],
+  "drift_points": [
+    60,
+    120,
+    200
+  ],
+  "classes": [
+    "normal",
+    "DoS",
+    "Reconn"
+  ],
+  "n_features": 41,
+  "dataset_info": {
+    "source": "../wustl_iiot_2021.csv",
+    "rows_raw": 221601,
+    "rows_used": 154505,
+    "n_features": 41,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [],
+    "class_counts": {
+      "normal": 90000,
+      "DoS": 56266,
+      "Reconn": 8239
+    }
+  }
+}

@@ -1,0 +1,6 @@
+,Normal,RDOS,Reconnaissance,Weaponization
+P0 Deployment,99.95,99.83,0.0,0.0
+P1 Initial,99.95,99.83,0.0,0.0
+P2 Drift,99.95,97.22,0.0,0.0
+P3 New-attack,99.95,97.22,0.0,0.0
+P4 A-returns,99.95,97.22,0.0,0.0

@@ -1,0 +1,13 @@
+{
+  "extends": "wustl_iiot_poisonP2.json",
+  "name": "gate2_wustl_iiot_poisonP2_h50",
+  "learners": {
+    "gate": {
+      "policy": "net",
+      "max_recall_drop": 0.5,
+      "max_detect_drop": 0.01,
+      "max_cum_drop": 0.5,
+      "soft_drop": 0.1
+    }
+  }
+}

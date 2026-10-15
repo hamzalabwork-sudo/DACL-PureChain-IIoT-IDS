@@ -1,0 +1,194 @@
+{
+  "scenario": {
+    "batch_size": 256,
+    "pretrain_size": 20000,
+    "test_per_class": 2000,
+    "shift": {
+      "frac_features": 0.4,
+      "scale_range": [
+        0.33,
+        3.0
+      ],
+      "offset_std": 2.0
+    },
+    "phases": [
+      {
+        "name": "P1 Initial",
+        "batches": 60,
+        "mix": {
+          "Normal": 0.7,
+          "A": 0.3
+        },
+        "shift": false
+      },
+      {
+        "name": "P2 Drift",
+        "batches": 60,
+        "mix": {
+          "Normal": 0.7,
+          "A": 0.3
+        },
+        "shift": true
+      },
+      {
+        "name": "P3 New-attack",
+        "batches": 80,
+        "mix": {
+          "Normal": 0.7,
+          "B": 0.3
+        },
+        "shift": true
+      },
+      {
+        "name": "P4 A-returns",
+        "batches": 80,
+        "mix": {
+          "Normal": 0.6,
+          "A": 0.2,
+          "B": 0.2
+        },
+        "shift": true
+      }
+    ]
+  },
+  "model": {
+    "lr": 0.001,
+    "pretrain_epochs": 10,
+    "train_batch": 256,
+    "arch": "mlp",
+    "arch_cfg": {
+      "mlp": {
+        "hidden": [
+          128,
+          64
+        ]
+      },
+      "cnn": {
+        "channels": [
+          32,
+          64
+        ],
+        "pooled": 8
+      },
+      "lstm": {
+        "hidden": 64,
+        "patch": 8
+      },
+      "gru": {
+        "hidden": 64,
+        "patch": 8
+      },
+      "cnn_lstm": {
+        "channels": 32,
+        "hidden": 64,
+        "pooled": 12
+      },
+      "transformer": {
+        "d_token": 32,
+        "layers": 2,
+        "heads": 4,
+        "ff": 64
+      }
+    }
+  },
+  "learners": {
+    "finetune_steps": 1,
+    "er_steps": 1,
+    "memory_size": 2000,
+    "ewc": {
+      "lambda": 100.0,
+      "gamma": 0.9,
+      "consolidate_every": 20
+    },
+    "detector": {
+      "signals": [
+        "error",
+        "entropy",
+        "feature"
+      ],
+      "delta": 0.5,
+      "threshold": 12.0,
+      "warmup": 10,
+      "clip": 6.0
+    },
+    "adapt_batches": 4,
+    "dacl": {
+      "kmin": 1,
+      "kmax": 5,
+      "lambda_replay": 1.0,
+      "lambda_kd": 1.0,
+      "temperature": 2.0,
+      "stable_steps": 0,
+      "max_adapt_batches": 40,
+      "patience": 10,
+      "recovery_tol": 0.02,
+      "min_adapt_batches": 8
+    },
+    "full_retrain": {
+      "epochs": 5
+    },
+    "residual": {
+      "window": 10,
+      "margin": 0.05,
+      "max_consecutive": 3
+    },
+    "gate": {
+      "backend": "local",
+      "threshold": 2,
+      "max_recall_drop": 0.05,
+      "max_detect_drop": 0.05,
+      "deploy_new": true,
+      "max_cum_drop": 0.05,
+      "quarantine_batches": 20,
+      "checkpoint_every": 4
+    },
+    "lwf": {
+      "snapshot_every": 20,
+      "lambda_kd": 1.0,
+      "temperature": 2.0
+    },
+    "derpp": {
+      "alpha": 0.1,
+      "beta": 0.5
+    },
+    "periodic": {
+      "period": 10,
+      "steps": 5
+    },
+    "window_retrain": {
+      "window_batches": 20,
+      "epochs": 5
+    }
+  },
+  "metrics": {
+    "recovery_tol": 0.02,
+    "ref_window": 10,
+    "false_alarm_window": 20,
+    "forgetting": {
+      "group": "A",
+      "after_phase": 2
+    },
+    "return_phase": 3,
+    "return_window": 5,
+    "batch_deadline_ms": 100
+  },
+  "energy": {
+    "cpu_power_w": 3.0
+  },
+  "threads": 1,
+  "seeds": 5,
+  "methods": [
+    "Static",
+    "FineTune",
+    "EWC",
+    "ER",
+    "FullRetrain",
+    "DriftFT",
+    "DACL"
+  ],
+  "ablations": [
+    "DACL-noKD",
+    "DACL-noReplay",
+    "DACL-fixedK"
+  ]
+}

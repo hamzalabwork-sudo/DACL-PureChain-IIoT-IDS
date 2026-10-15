@@ -1,0 +1,5 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "lab_1_forge_iiot",
+  "label_budget": 0.01
+}

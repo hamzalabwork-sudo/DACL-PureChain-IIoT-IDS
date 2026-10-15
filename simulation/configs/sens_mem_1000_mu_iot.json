@@ -1,0 +1,7 @@
+{
+  "extends": "mu_iot.json",
+  "name": "sens_mem_1000_mu_iot",
+  "learners": {
+    "memory_size": 1000
+  }
+}

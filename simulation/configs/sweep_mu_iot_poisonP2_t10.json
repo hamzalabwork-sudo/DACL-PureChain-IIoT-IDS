@@ -1,0 +1,11 @@
+{
+  "extends": "mu_iot_poisonP2.json",
+  "name": "mu_iot_poisonP2_t10",
+  "learners": {
+    "gate": {
+      "max_recall_drop": 0.1,
+      "max_detect_drop": 0.1,
+      "max_cum_drop": 0.2
+    }
+  }
+}

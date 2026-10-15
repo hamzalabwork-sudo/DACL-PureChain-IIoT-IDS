@@ -1,0 +1,40 @@
+{
+  "extends": "base.json",
+  "name": "forge_iiot",
+  "dataset": {
+    "type": "csv",
+    "path": "../Forge_IIOT_Pro.csv",
+    "label_col": "attack_type",
+    "other_label_cols": [
+      "attack_label"
+    ],
+    "drop_cols": [
+      "frame.number",
+      "frame.time_epoch",
+      "tcp.stream",
+      "udp.stream",
+      "ip.checksum",
+      "tcp.checksum",
+      "udp.checksum",
+      "icmp.checksum",
+      "icmpv6.checksum"
+    ],
+    "max_per_class": 90000,
+    "drop_duplicates": true
+  },
+  "scenario": {
+    "normal": "normal",
+    "groups": {
+      "A": [
+        "ddos_tcp",
+        "dos_icmp",
+        "dos_udp"
+      ],
+      "B": [
+        "port_scan",
+        "vuln_scan",
+        "os_finger"
+      ]
+    }
+  }
+}

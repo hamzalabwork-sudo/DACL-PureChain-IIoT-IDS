@@ -1,0 +1,17 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "forge_iiot_poisonP2",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  },
+  "poisoning": {
+    "enabled": true,
+    "phases": [
+      1
+    ],
+    "rate": 0.8
+  }
+}

@@ -1,0 +1,10 @@
+Setting,Method,Macro-F1 (%),Detection (%),FPR (%),MAE (flows),Known-attack detectability (%),Rejected,Escalated,Poisoned updates accepted
+Clean (cost of security),DACL,92.73 ± 0.84,92.50 ± 1.02,1.12 ± 0.33,"1,380 ± 211",99.75 ± 0.09,--,--,--
+Clean (cost of security),DACL+Gate,92.72 ± 0.91,92.24 ± 1.15,0.99 ± 0.24,"1,442 ± 244",99.81 ± 0.13,0.0%,0.0%,--
+Clean (cost of security),DACL+Gate-dual,92.80 ± 0.88,92.20 ± 1.14,0.92 ± 0.22,"1,450 ± 243",99.78 ± 0.17,0.0%,0.0%,--
+Poisoning during drift (P2),DACL,82.27 ± 0.63,74.08 ± 1.57,0.81 ± 0.16,"1,140 ± 1,846",99.50 ± 0.13,--,--,--
+Poisoning during drift (P2),DACL+Gate,87.93 ± 1.15,85.79 ± 2.18,0.98 ± 0.10,"2,791 ± 461",99.66 ± 0.07,18.3%,0.0%,--
+Poisoning during drift (P2),DACL+Gate-dual,89.18 ± 0.92,85.94 ± 2.19,0.95 ± 0.22,"2,762 ± 449",99.49 ± 0.31,18.9%,0.0%,--
+Unlearning attack on known attack (P4),DACL,91.24 ± 1.20,88.37 ± 2.24,0.84 ± 0.25,"1,380 ± 211",66.22 ± 26.66,--,--,100%
+Unlearning attack on known attack (P4),DACL+Gate,92.56 ± 0.85,92.15 ± 1.23,1.09 ± 0.24,"1,442 ± 244",99.54 ± 0.45,21.7%,0.0%,10.0%
+Unlearning attack on known attack (P4),DACL+Gate-dual,92.63 ± 0.79,92.01 ± 1.13,1.03 ± 0.25,"1,450 ± 243",99.01 ± 1.31,18.8%,0.0%,11.8%

@@ -1,0 +1,9 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "sens_kmax_8_edge_iiotset",
+  "learners": {
+    "dacl": {
+      "kmax": 8
+    }
+  }
+}

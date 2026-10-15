@@ -1,0 +1,61 @@
+{
+  "phase_start": [
+    0,
+    60,
+    120,
+    200
+  ],
+  "phase_names": [
+    "P1 Initial",
+    "P2 Drift",
+    "P3 New-attack",
+    "P4 A-returns"
+  ],
+  "drift_points": [
+    60,
+    120,
+    200
+  ],
+  "classes": [
+    "Normal",
+    "DDoS_UDP",
+    "DDoS_ICMP",
+    "DDoS_TCP",
+    "DDoS_HTTP",
+    "Password",
+    "SQL_injection",
+    "XSS",
+    "Vulnerability_scanner"
+  ],
+  "n_features": 36,
+  "dataset_info": {
+    "source": "../Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv",
+    "rows_raw": 640499,
+    "rows_used": 512936,
+    "n_features": 36,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [
+      "icmp.unused",
+      "http.request.method",
+      "http.referer",
+      "http.request.version",
+      "http.tls_port",
+      "dns.qry.name.len",
+      "dns.qry.type",
+      "mqtt.msg_decoded_as",
+      "mqtt.protoname",
+      "mqtt.topic"
+    ],
+    "class_counts": {
+      "Normal": 90000,
+      "DDoS_UDP": 90000,
+      "DDoS_ICMP": 67939,
+      "SQL_injection": 50826,
+      "DDoS_TCP": 50062,
+      "Vulnerability_scanner": 50026,
+      "Password": 49933,
+      "DDoS_HTTP": 49084,
+      "XSS": 15066
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "edge_iiotset_gate.json",
+  "name": "edge_iiotset_gate_t20",
+  "learners": {
+    "gate": {
+      "max_recall_drop": 0.2,
+      "max_detect_drop": 0.2,
+      "max_cum_drop": 0.4
+    }
+  }
+}

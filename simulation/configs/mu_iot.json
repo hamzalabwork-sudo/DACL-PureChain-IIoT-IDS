@@ -1,0 +1,40 @@
+{
+  "extends": "base.json",
+  "name": "mu_iot",
+  "dataset": {
+    "type": "csv",
+    "path": "../MU-IoT.csv",
+    "label_col": "type",
+    "other_label_cols": [
+      "label",
+      "category"
+    ],
+    "drop_cols": [
+      "FPT",
+      "LPT",
+      "SIP",
+      "DIP",
+      "SPort",
+      "DPort"
+    ],
+    "max_per_class": 90000,
+    "drop_duplicates": true
+  },
+  "scenario": {
+    "normal": "normal",
+    "groups": {
+      "A": [
+        "TCP_SYN",
+        "UDP_flood",
+        "ICMP_Flood",
+        "HTTP_Flood"
+      ],
+      "B": [
+        "sql",
+        "XSS",
+        "Bruteforce",
+        "Dictionary"
+      ]
+    }
+  }
+}

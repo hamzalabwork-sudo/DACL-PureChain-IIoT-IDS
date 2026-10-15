@@ -1,0 +1,10 @@
+{
+  "extends": "wustl_iiot.json",
+  "name": "wustl_iiot_gate",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  }
+}

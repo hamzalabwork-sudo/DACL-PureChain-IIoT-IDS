@@ -1,0 +1,9 @@
+{
+  "extends": "mu_iot.json",
+  "name": "sens_thr_12_mu_iot",
+  "learners": {
+    "detector": {
+      "threshold": 12.0
+    }
+  }
+}

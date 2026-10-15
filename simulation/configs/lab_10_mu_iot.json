@@ -1,0 +1,5 @@
+{
+  "extends": "mu_iot.json",
+  "name": "lab_10_mu_iot",
+  "label_budget": 0.1
+}

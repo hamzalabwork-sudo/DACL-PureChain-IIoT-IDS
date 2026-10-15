@@ -1,0 +1,9 @@
+{
+  "extends": "gate2_xiiotid_poisonP4_h30.json",
+  "name": "gate3_xiiotid_poisonP4",
+  "learners": {
+    "gate": {
+      "policy": "net_bal"
+    }
+  }
+}

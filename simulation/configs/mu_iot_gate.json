@@ -1,0 +1,10 @@
+{
+  "extends": "mu_iot.json",
+  "name": "mu_iot_gate",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  }
+}

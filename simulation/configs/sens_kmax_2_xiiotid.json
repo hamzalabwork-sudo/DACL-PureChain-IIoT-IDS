@@ -1,0 +1,9 @@
+{
+  "extends": "xiiotid.json",
+  "name": "sens_kmax_2_xiiotid",
+  "learners": {
+    "dacl": {
+      "kmax": 2
+    }
+  }
+}

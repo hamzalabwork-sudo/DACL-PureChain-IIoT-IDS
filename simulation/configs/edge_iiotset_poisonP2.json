@@ -1,0 +1,17 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "edge_iiotset_poisonP2",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  },
+  "poisoning": {
+    "enabled": true,
+    "phases": [
+      1
+    ],
+    "rate": 0.8
+  }
+}

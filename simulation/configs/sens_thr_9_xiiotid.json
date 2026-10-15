@@ -1,0 +1,9 @@
+{
+  "extends": "xiiotid.json",
+  "name": "sens_thr_9_xiiotid",
+  "learners": {
+    "detector": {
+      "threshold": 9.0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "sens_thr_18_forge_iiot",
+  "learners": {
+    "detector": {
+      "threshold": 18.0
+    }
+  }
+}

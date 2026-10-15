@@ -1,0 +1,7 @@
+{
+  "extends": "xiiotid.json",
+  "name": "sens_mem_5000_xiiotid",
+  "learners": {
+    "memory_size": 5000
+  }
+}

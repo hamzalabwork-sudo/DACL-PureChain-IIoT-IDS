@@ -1,0 +1,7 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "sens_mem_2000_forge_iiot",
+  "learners": {
+    "memory_size": 2000
+  }
+}

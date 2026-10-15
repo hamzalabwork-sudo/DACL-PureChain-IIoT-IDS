@@ -1,0 +1,6 @@
+,normal,ddos_tcp,dos_icmp,dos_udp,port_scan,vuln_scan,os_finger
+P0 Deployment,99.98,99.89,99.92,99.69,0.0,0.0,0.0
+P1 Initial,99.98,99.89,99.92,99.69,0.0,0.0,0.0
+P2 Drift,99.97,99.86,99.92,99.69,0.0,0.0,0.0
+P3 New-attack,99.97,99.86,99.92,99.69,0.0,0.0,0.0
+P4 A-returns,99.97,99.86,99.92,99.69,0.0,0.0,0.0

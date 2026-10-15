@@ -1,0 +1,7 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "sens_mem_5000_edge_iiotset",
+  "learners": {
+    "memory_size": 5000
+  }
+}

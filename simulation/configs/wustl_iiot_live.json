@@ -1,0 +1,15 @@
+{
+  "extends": "wustl_iiot_gate.json",
+  "name": "wustl_iiot_live",
+  "learners": {
+    "gate": {
+      "backend": "purechain",
+      "deploy_new": true,
+      "policy": "net",
+      "max_recall_drop": 0.3,
+      "max_detect_drop": 0.01,
+      "max_cum_drop": 0.3,
+      "soft_drop": 0.1
+    }
+  }
+}

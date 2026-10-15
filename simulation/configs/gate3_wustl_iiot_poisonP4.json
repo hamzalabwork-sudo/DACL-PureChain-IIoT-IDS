@@ -1,0 +1,9 @@
+{
+  "extends": "gate2_wustl_iiot_poisonP4_h30.json",
+  "name": "gate3_wustl_iiot_poisonP4",
+  "learners": {
+    "gate": {
+      "policy": "net_bal"
+    }
+  }
+}

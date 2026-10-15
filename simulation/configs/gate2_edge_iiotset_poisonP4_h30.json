@@ -1,0 +1,13 @@
+{
+  "extends": "edge_iiotset_poisonP4.json",
+  "name": "gate2_edge_iiotset_poisonP4_h30",
+  "learners": {
+    "gate": {
+      "policy": "net",
+      "max_recall_drop": 0.3,
+      "max_detect_drop": 0.01,
+      "max_cum_drop": 0.3,
+      "soft_drop": 0.1
+    }
+  }
+}

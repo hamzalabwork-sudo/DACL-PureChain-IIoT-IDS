@@ -1,0 +1,5 @@
+{
+  "extends": "wustl_iiot.json",
+  "name": "sens_delay_20_wustl_iiot",
+  "label_delay": 20
+}

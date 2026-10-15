@@ -1,0 +1,11 @@
+{
+  "extends": "wustl_iiot_gate.json",
+  "name": "wustl_iiot_gate_t02",
+  "learners": {
+    "gate": {
+      "max_recall_drop": 0.02,
+      "max_detect_drop": 0.02,
+      "max_cum_drop": 0.04
+    }
+  }
+}

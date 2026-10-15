@@ -1,0 +1,9 @@
+{
+  "extends": "mu_iot.json",
+  "name": "sens_kmax_5_mu_iot",
+  "learners": {
+    "dacl": {
+      "kmax": 5
+    }
+  }
+}

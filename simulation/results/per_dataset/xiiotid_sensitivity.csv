@@ -1,0 +1,33 @@
+method,value,parameter,Macro-F1 (%),Forgetting (%),MAE,Grad steps
+DACL,500.0,Replay memory size,93.3,0.2,1270.6,262.6
+DACL,1000.0,Replay memory size,93.3,0.2,1219.4,256.4
+DACL,2000.0,Replay memory size,93.5,0.1,1219.4,253.0
+DACL,5000.0,Replay memory size,93.4,0.2,1229.4,234.0
+ER,500.0,Replay memory size,88.4,0.2,1844.8,280.0
+ER,1000.0,Replay memory size,88.0,0.2,1778.0,280.0
+ER,2000.0,Replay memory size,88.5,0.2,1824.8,280.0
+ER,5000.0,Replay memory size,88.0,0.2,1815.6,280.0
+DACL,6.0,Detector threshold (CUSUM h),94.5,0.2,983.6,302.8
+DACL,9.0,Detector threshold (CUSUM h),94.1,0.1,1091.2,264.4
+DACL,12.0,Detector threshold (CUSUM h),93.5,0.1,1219.4,253.0
+DACL,18.0,Detector threshold (CUSUM h),93.2,0.1,1280.2,258.2
+ER,6.0,Detector threshold (CUSUM h),88.5,0.2,1824.8,280.0
+ER,9.0,Detector threshold (CUSUM h),88.5,0.2,1824.8,280.0
+ER,12.0,Detector threshold (CUSUM h),88.5,0.2,1824.8,280.0
+ER,18.0,Detector threshold (CUSUM h),88.5,0.2,1824.8,280.0
+DACL,2.0,Max adaptation steps (kmax),90.0,0.1,1957.6,174.2
+DACL,3.0,Max adaptation steps (kmax),91.0,0.1,1729.8,196.4
+DACL,5.0,Max adaptation steps (kmax),93.5,0.1,1219.4,253.0
+DACL,8.0,Max adaptation steps (kmax),94.6,0.1,1007.4,316.8
+ER,2.0,Max adaptation steps (kmax),88.5,0.2,1824.8,280.0
+ER,3.0,Max adaptation steps (kmax),88.5,0.2,1824.8,280.0
+ER,5.0,Max adaptation steps (kmax),88.5,0.2,1824.8,280.0
+ER,8.0,Max adaptation steps (kmax),88.5,0.2,1824.8,280.0
+DACL,0.0,Label delay (batches),93.5,0.1,1219.4,253.0
+DACL,5.0,Label delay (batches),92.3,0.1,1582.4,270.8
+DACL,10.0,Label delay (batches),90.7,0.2,1999.6,220.4
+DACL,20.0,Label delay (batches),88.4,0.1,2737.0,249.8
+ER,0.0,Label delay (batches),88.5,0.2,1824.8,280.0
+ER,5.0,Label delay (batches),87.3,0.2,2176.2,275.0
+ER,10.0,Label delay (batches),86.1,0.2,2542.6,270.0
+ER,20.0,Label delay (batches),83.8,0.2,3264.0,260.0

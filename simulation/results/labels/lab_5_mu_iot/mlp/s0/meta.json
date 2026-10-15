@@ -1,0 +1,69 @@
+{
+  "phase_start": [
+    0,
+    60,
+    120,
+    200
+  ],
+  "phase_names": [
+    "P1 Initial",
+    "P2 Drift",
+    "P3 New-attack",
+    "P4 A-returns"
+  ],
+  "drift_points": [
+    60,
+    120,
+    200
+  ],
+  "classes": [
+    "normal",
+    "TCP_SYN",
+    "UDP_flood",
+    "ICMP_Flood",
+    "HTTP_Flood",
+    "sql",
+    "XSS",
+    "Bruteforce",
+    "Dictionary"
+  ],
+  "n_features": 101,
+  "dataset_info": {
+    "source": "../MU-IoT.csv",
+    "rows_raw": 1196695,
+    "rows_used": 810000,
+    "n_features": 101,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [
+      "ECN_M",
+      "ECN_UV",
+      "ECN_S",
+      "FPC",
+      "URG_FC",
+      "ECE_FC",
+      "CWR_FC",
+      "CE",
+      "HTTPDeletC",
+      "HTTPPatchC",
+      "HTTPHeadC",
+      "HTTPTraceC",
+      "HTTPConC",
+      "RTSP_SPC",
+      "RTSP_RecordC",
+      "RTSP_TeardownC",
+      "RTSP_RedirectC",
+      "RTSP_PauseC"
+    ],
+    "class_counts": {
+      "ICMP_Flood": 90000,
+      "Dictionary": 90000,
+      "UDP_flood": 90000,
+      "HTTP_Flood": 90000,
+      "Bruteforce": 90000,
+      "XSS": 90000,
+      "TCP_SYN": 90000,
+      "sql": 90000,
+      "normal": 90000
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "edge_iiotset_poisonP4.json",
+  "name": "edge_iiotset_poisonP4_t10",
+  "learners": {
+    "gate": {
+      "max_recall_drop": 0.1,
+      "max_detect_drop": 0.1,
+      "max_cum_drop": 0.2
+    }
+  }
+}

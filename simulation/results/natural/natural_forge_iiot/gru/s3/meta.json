@@ -1,0 +1,73 @@
+{
+  "phase_start": [
+    0,
+    135,
+    269,
+    403
+  ],
+  "phase_names": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "drift_points": [
+    60,
+    133,
+    140,
+    144,
+    191,
+    263,
+    282,
+    370,
+    424,
+    527
+  ],
+  "classes": [
+    "normal",
+    "ddos_tcp",
+    "dos_icmp",
+    "dos_ipv4",
+    "dos_udp",
+    "port_scan",
+    "os_finger",
+    "mitm_arp",
+    "mitm_ndp",
+    "sybil",
+    "dos_land",
+    "dos_deauth",
+    "vuln_scan",
+    "malw_back",
+    "ddos_mp",
+    "wild_card"
+  ],
+  "n_features": 85,
+  "dataset_info": {
+    "source": "../Forge_IIOT_Pro.csv",
+    "rows_raw": 208468,
+    "rows_used": 208468,
+    "n_features": 85,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [],
+    "class_counts": {
+      "normal": 34494,
+      "ddos_mp": 19649,
+      "port_scan": 19608,
+      "dos_icmp": 19577,
+      "dos_ipv4": 19492,
+      "dos_land": 19380,
+      "dos_udp": 19304,
+      "ddos_tcp": 19284,
+      "vuln_scan": 19009,
+      "os_finger": 4722,
+      "mitm_ndp": 2996,
+      "wild_card": 2950,
+      "mitm_arp": 2093,
+      "sybil": 2084,
+      "malw_back": 1933,
+      "dos_deauth": 1835,
+      "mitm_dhcp": 58
+    },
+    "times": "[1.68855187e+09 1.68855187e+09 1.68855187e+09 ... 1.72909164e+09\n 1.72909164e+09 1.72909164e+09]"
+  }
+}

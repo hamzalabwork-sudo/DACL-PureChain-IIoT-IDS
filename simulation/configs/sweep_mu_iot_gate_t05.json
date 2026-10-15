@@ -1,0 +1,11 @@
+{
+  "extends": "mu_iot_gate.json",
+  "name": "mu_iot_gate_t05",
+  "learners": {
+    "gate": {
+      "max_recall_drop": 0.05,
+      "max_detect_drop": 0.05,
+      "max_cum_drop": 0.1
+    }
+  }
+}

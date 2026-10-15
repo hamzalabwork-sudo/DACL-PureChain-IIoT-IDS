@@ -1,0 +1,42 @@
+{
+  "extends": "base.json",
+  "name": "natural_xiiotid",
+  "dataset": {
+    "type": "csv",
+    "path": "../X-IIoTID/X-IIoTID dataset.csv",
+    "label_col": "class2",
+    "other_label_cols": [
+      "class1",
+      "class3"
+    ],
+    "drop_cols": [
+      "Date",
+      "Timestamp",
+      "Scr_IP",
+      "Des_IP",
+      "Scr_port",
+      "Des_port"
+    ],
+    "drop_duplicates": true,
+    "time_col": "Timestamp",
+    "target_rows": 200000,
+    "min_per_class": 3000
+  },
+  "scenario": {
+    "type": "natural",
+    "batch_size": 256,
+    "pretrain_frac": 0.3,
+    "n_segments": 4,
+    "test_per_class": 1000,
+    "test_frac": 0.15,
+    "min_class_rows": 200,
+    "normal": "Normal"
+  },
+  "metrics": {
+    "forgetting": {
+      "group": "A",
+      "after_phase": 3
+    },
+    "return_phase": 3
+  }
+}

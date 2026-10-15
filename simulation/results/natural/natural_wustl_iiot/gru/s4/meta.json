@@ -1,0 +1,43 @@
+{
+  "phase_start": [
+    0,
+    137,
+    273,
+    409
+  ],
+  "phase_names": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "drift_points": [
+    70,
+    197,
+    264
+  ],
+  "classes": [
+    "normal",
+    "Reconn",
+    "DoS",
+    "CommInj",
+    "Backdoor"
+  ],
+  "n_features": 41,
+  "dataset_info": {
+    "source": "../wustl_iiot_2021.csv",
+    "rows_raw": 201954,
+    "rows_used": 201932,
+    "n_features": 41,
+    "dropped_high_cardinality": [],
+    "dropped_constant": [],
+    "class_counts": {
+      "normal": 185150,
+      "DoS": 13278,
+      "Reconn": 3033,
+      "CommInj": 259,
+      "Backdoor": 212
+    },
+    "times": "[1566222.091 1566218.599 1566214.3   ... 1566229.028 1566219.191\n 1566230.533]"
+  }
+}

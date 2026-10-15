@@ -1,0 +1,9 @@
+{
+  "extends": "gate2_mu_iot_gate_h30.json",
+  "name": "gate3_mu_iot_gate",
+  "learners": {
+    "gate": {
+      "policy": "net_bal"
+    }
+  }
+}

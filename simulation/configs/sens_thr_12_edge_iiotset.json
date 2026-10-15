@@ -1,0 +1,9 @@
+{
+  "extends": "edge_iiotset.json",
+  "name": "sens_thr_12_edge_iiotset",
+  "learners": {
+    "detector": {
+      "threshold": 12.0
+    }
+  }
+}

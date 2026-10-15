@@ -1,0 +1,58 @@
+{
+  "phase_start": [
+    0,
+    60,
+    120,
+    200
+  ],
+  "phase_names": [
+    "P1 Initial",
+    "P2 Drift",
+    "P3 New-attack",
+    "P4 A-returns"
+  ],
+  "drift_points": [
+    60,
+    120,
+    200
+  ],
+  "classes": [
+    "Normal",
+    "RDOS",
+    "Reconnaissance",
+    "Weaponization"
+  ],
+  "n_features": 62,
+  "dataset_info": {
+    "source": "../X-IIoTID/X-IIoTID dataset.csv",
+    "rows_raw": 464609,
+    "rows_used": 317458,
+    "n_features": 62,
+    "dropped_high_cardinality": [
+      "Scr_bytes",
+      "Des_bytes",
+      "Scr_pkts",
+      "Scr_ip_bytes",
+      "Des_pkts",
+      "Des_ip_bytes",
+      "total_bytes",
+      "total_packet",
+      "paket_rate",
+      "byte_rate",
+      "Scr_packts_ratio",
+      "Des_pkts_ratio",
+      "Scr_bytes_ratio",
+      "Des_bytes_ratio"
+    ],
+    "dropped_constant": [
+      "Bad_checksum",
+      "is_SYN_with_RST"
+    ],
+    "class_counts": {
+      "Reconnaissance": 90000,
+      "Normal": 90000,
+      "RDOS": 73639,
+      "Weaponization": 63819
+    }
+  }
+}

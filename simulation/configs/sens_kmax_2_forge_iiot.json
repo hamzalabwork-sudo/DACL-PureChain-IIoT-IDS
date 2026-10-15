@@ -1,0 +1,9 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "sens_kmax_2_forge_iiot",
+  "learners": {
+    "dacl": {
+      "kmax": 2
+    }
+  }
+}

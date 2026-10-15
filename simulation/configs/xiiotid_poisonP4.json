@@ -1,0 +1,17 @@
+{
+  "extends": "xiiotid.json",
+  "name": "xiiotid_poisonP4",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  },
+  "poisoning": {
+    "enabled": true,
+    "phases": [
+      3
+    ],
+    "rate": 0.8
+  }
+}

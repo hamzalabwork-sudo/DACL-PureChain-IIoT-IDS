@@ -1,0 +1,5 @@
+{
+  "extends": "forge_iiot.json",
+  "name": "sens_delay_0_forge_iiot",
+  "label_delay": 0
+}

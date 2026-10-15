@@ -1,0 +1,9 @@
+{
+  "extends": "gate2_edge_iiotset_poisonP4_h30.json",
+  "name": "gate3_edge_iiotset_poisonP4",
+  "learners": {
+    "gate": {
+      "policy": "net_bal"
+    }
+  }
+}

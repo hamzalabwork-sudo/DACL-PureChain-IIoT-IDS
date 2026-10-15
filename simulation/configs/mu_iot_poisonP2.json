@@ -1,0 +1,17 @@
+{
+  "extends": "mu_iot.json",
+  "name": "mu_iot_poisonP2",
+  "scenario": {
+    "validators": {
+      "n": 3,
+      "per_class": 300
+    }
+  },
+  "poisoning": {
+    "enabled": true,
+    "phases": [
+      1
+    ],
+    "rate": 0.8
+  }
+}

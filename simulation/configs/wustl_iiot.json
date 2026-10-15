@@ -1,0 +1,73 @@
+{
+  "extends": "base.json",
+  "name": "wustl_iiot",
+  "dataset": {
+    "type": "csv",
+    "path": "../wustl_iiot_2021.csv",
+    "label_col": "Traffic",
+    "other_label_cols": [
+      "Target"
+    ],
+    "drop_cols": [
+      "StartTime",
+      "LastTime",
+      "SrcAddr",
+      "DstAddr",
+      "Sport",
+      "Dport"
+    ],
+    "max_per_class": 90000,
+    "drop_duplicates": true
+  },
+  "scenario": {
+    "normal": "normal",
+    "groups": {
+      "A": [
+        "DoS"
+      ],
+      "B": [
+        "Reconn"
+      ]
+    },
+    "test_per_class": 1000,
+    "phases": [
+      {
+        "name": "P1 Initial",
+        "batches": 60,
+        "mix": {
+          "Normal": 0.7,
+          "A": 0.3
+        },
+        "shift": false
+      },
+      {
+        "name": "P2 Drift",
+        "batches": 60,
+        "mix": {
+          "Normal": 0.7,
+          "A": 0.3
+        },
+        "shift": true
+      },
+      {
+        "name": "P3 New-attack",
+        "batches": 80,
+        "mix": {
+          "Normal": 0.8,
+          "B": 0.2
+        },
+        "shift": true
+      },
+      {
+        "name": "P4 A-returns",
+        "batches": 80,
+        "mix": {
+          "Normal": 0.8,
+          "A": 0.1,
+          "B": 0.1
+        },
+        "shift": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "wustl_iiot.json",
+  "name": "lab_1_wustl_iiot",
+  "label_budget": 0.01
+}
