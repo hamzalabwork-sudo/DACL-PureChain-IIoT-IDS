@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "DACL: Drift-Aware Continual Learning with PureChain-Verified Model Updates for IIoT Intrusion Detection"
+type: software
+license: MIT
+repository-code: "https://github.com/hamzalabwork-sudo/DACL-PureChain-IIoT-IDS"
+authors:
+  - family-names: Ibrahim
+    given-names: Hamza
+    affiliation: "Kumoh National Institute of Technology"
+  - family-names: Ahakonye
+    given-names: Love Allen Chijioke
+  - family-names: Lee
+    given-names: Jae-Min
+  - family-names: Kim
+    given-names: Dong-Seong
+preferred-citation:
+  type: article
+  title: "Drift-Aware Continual Learning with PureChain-Verified Model Updates for Real-Time Industrial IoT Intrusion Detection"
+  journal: "IEEE Internet of Things Journal (submitted)"
+  year: 2026
+  authors:
+    - family-names: Ibrahim
+      given-names: Hamza
+    - family-names: Ahakonye
+      given-names: Love Allen Chijioke
+    - family-names: Lee
+      given-names: Jae-Min
+    - family-names: Kim
+      given-names: Dong-Seong
